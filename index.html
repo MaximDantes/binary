@@ -14,7 +14,7 @@
 
     <header>
         <div class="header-logo">
-            <img src="img/header/header-logo.png" alt="">
+            <img src="img/header/header-logo.png" alt="binary">
         </div>
 
         <div class="header-text">
@@ -49,14 +49,18 @@
 
         <div class="portfolio">
             <div class="slider">
+                <div class="slide hidden"><img src="img/portfolio/concorde.png" alt="concorde"></div>
+                <div class="slide hidden"><img src="img/portfolio/endofeva.jpg" alt="eva"></div>
+                <div class="slide hidden"><img src="img/portfolio/HBE.png" alt="britania"></div>
                 <div class="slide"><img src="img/portfolio/72657174.jpg" alt="gil"></div>
-                <div class="slide"><img src="img/portfolio/concorde.png" alt="concorde"></div>
-                <div class="slide"><img src="img/portfolio/endofeva.jpg" alt="eva"></div>
-                <div class="slide"><img src="img/portfolio/HBE.png" alt="britania"></div>
+
+                <div class="arrows">
+                    <div id="prew" onclick=changeSlide(-1)></div>
+                    <div id="next" onclick=changeSlide(1)></div>
+                </div>
             </div>
         </div>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates ab nisi eveniet, ut non quo deleniti error mollitia odit atque blanditiis dolores dolorem, officiis numquam commodi, necessitatibus fugiat sequi iure!</p>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
