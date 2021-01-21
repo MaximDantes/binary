@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  background: url("/img/header/header-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+header .header-logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 0px 100px 0;
+}
+
+header .header-text {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+header .header-text h1 {
+  font-size: 34px;
+  color: #ffffff;
+  display: block;
+}
+
+header .header-text p {
+  font-size: 26px;
+  color: #ffffff;
+  display: block;
+}
+
+header .header-text::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 110px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  margin-top: 40px;
+}
+
+header .header-button {
+  color: #ffffff;
+  margin: 0 auto;
+  width: 180px;
+  height: 50px;
+  margin-top: 85px;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 2%;
+  transition: all 0.3s;
+}
+
+header .header-button p {
+  line-height: 45px;
+  user-select: none;
+}
+
+header .header-button:hover {
+  background-color: #ffffff22;
+}
+
+nav .container {
+  max-width: 500px;
+  text-align: center;
+  font-size: 15px;
+  height: 30px;
+}
+
+nav .container .row {
+  line-height: 30px;
+}
+
+nav .container a {
+  color: #000000;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+nav .container a:hover {
+  color: #ffaa2b;
+}
+
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 34px;
+  margin-top: 80px;
+}
+
+.about h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 60px;
+  margin: 0 auto;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+.about p {
+  font-size: 14px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  line-height: 20px;
+}
+
+.portfolio {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.portfolio .slider {
+  position: relative;
+  padding-bottom: 56.5%;
+}
+
+.portfolio .slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .slider .slide img {
+  width: 100%;
+  height: 100%;
+}
