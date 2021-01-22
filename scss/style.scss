@@ -256,7 +256,7 @@ nav {
         height: 150px;
         padding-top: 50px;
         .button {
-            color #000000;
+            color: #000000;
             margin: 0 auto;
             display: block;
             width: 180px;
@@ -273,6 +273,30 @@ nav {
             &:hover {
                 background-color: #00000022;
             }
+        }
+    }
+}
+
+.partners {
+    background: url("../img/header/header-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px 0;
+
+    .partners-title {
+        color: #ffffff;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .partners-logos {
+        max-width: 900px;
+        text-align: center;
+        padding-top: 50px;
+
+        img {
+            margin: 20px 0;
         }
     }
 }

@@ -367,3 +367,27 @@ nav .container a:hover {
 .portfolio .portfolio-button .button:hover {
   background-color: #00000022;
 }
+
+.partners {
+  background: url("../img/header/header-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 70px 0;
+}
+
+.partners .partners-title {
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+}
+
+.partners .partners-logos {
+  max-width: 900px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.partners .partners-logos img {
+  margin: 20px 0;
+}
