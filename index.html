@@ -23,7 +23,9 @@
         </div>
 
         <div class="header-button">
-            <p>READ MORE</p>
+            <div class="button">
+                <p>READ MORE</p>
+            </div>
         </div>
     </header>
 
@@ -40,25 +42,86 @@
 
     <main>
         <div class="about">
-            <h1>ABOUT</h1>
-            <p>We specialize in contemporary, functional, and stunning websites with design that really brings that
-                "WOW" factor. <br>
-                In our design process, we make sure to stay one step ahead of the latest trends, <br>
-                never forgetting to abide by key web standards.</p>
+            <div class="about-title">
+                <h1>ABOUT</h1>
+                <p>We specialize in contemporary, functional, and stunning websites with design that really brings that
+                    "WOW" factor. <br>
+                    In our design process, we make sure to stay one step ahead of the latest trends, <br>
+                    never forgetting to abide by key web standards.</p>
+            </div>
+           
+            <div class="about-columns container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="logo"><img src="img/about/01.png" alt="logo"></div>
+                        <h2>WEB</h2>
+                        <p>We tend to deliver unique and 
+                            functional design, through 
+                            innovation and creativity.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="logo"><img src="img/about/02.png" alt="logo"></div>
+                        <h2>IOS AND ANDROID</h2>
+                        <p>We seek to bring new businesses and 
+                            customers closer together through valuable 
+                            insights and proper targeting.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="logo"><img src="img/about/03.png" alt="logo"></div>
+                        <h2>MARKETING</h2>
+                        <p>We’ll help you establish the right goals 
+                            and build the right paths. Success depends 
+                            on setting the right intention.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="portfolio">
-            <div class="slider">
-                <div class="slide hidden"><img src="img/portfolio/concorde.png" alt="concorde"></div>
-                <div class="slide hidden"><img src="img/portfolio/endofeva.jpg" alt="eva"></div>
-                <div class="slide hidden"><img src="img/portfolio/HBE.png" alt="britania"></div>
-                <div class="slide"><img src="img/portfolio/72657174.jpg" alt="gil"></div>
+            <div class="portfolio-title">
+                <h1>PORTFOLIO</h1>
+            </div>
 
-                <div class="arrows">
-                    <div id="prew" onclick=changeSlide(-1)></div>
-                    <div id="next" onclick=changeSlide(1)></div>
+            <div class="portfolio-tabcontrol">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <a class="tab-controller active" href="#tab" onclick=changeTab(0)>ALL</a>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <a class="tab-controller" href="#tab" onclick=changeTab(1)>WEB</a>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <a class="tab-controller" href="#tab" onclick=changeTab(2)>APPS</a>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <a class="tab-controller" href="#tab" onclick=changeTab(3)>OTHER</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <a href="#" name="tab"></a>
+
+            <div class="portfolio-all-tab tab">
+                <div class="slider">
+                    <div class="slide hidden"><img src="img/portfolio/concorde.png" alt="concorde"></div>
+                    <div class="slide hidden"><img src="img/portfolio/saber.gif" alt="eva"></div>
+                    <div class="slide hidden"><img src="img/portfolio/HBE.png" alt="britania"></div>
+                    <div class="slide"><img src="img/portfolio/72657174.jpg" alt="gil"></div>
+    
+                    <div class="arrows">
+                        <div id="prew" onclick=changeSlide(-1)></div>
+                        <div id="next" onclick=changeSlide(1)></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-web-tab tab hidden"></div>
+
+            <div class="portfolio-apps-tab tab hidden"></div>
+            
+            <div class="portfolio-other-tab tab hidden"></div>
         </div>
 
     </main>

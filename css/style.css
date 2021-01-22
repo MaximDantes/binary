@@ -79,7 +79,6 @@ header {
   background: url("/img/header/header-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 700px;
 }
 
 header .header-logo {
@@ -118,23 +117,29 @@ header .header-text::after {
 }
 
 header .header-button {
+  width: 100%;
+  height: 150px;
+  padding-top: 50px;
+}
+
+header .header-button .button {
   color: #ffffff;
   margin: 0 auto;
+  display: block;
   width: 180px;
   height: 50px;
-  margin-top: 85px;
   text-align: center;
   border: 2px solid #ffffff;
   border-radius: 2%;
   transition: all 0.3s;
 }
 
-header .header-button p {
+header .header-button .button p {
   line-height: 45px;
   user-select: none;
 }
 
-header .header-button:hover {
+header .header-button .button:hover {
   background-color: #ffffff22;
 }
 
@@ -185,7 +190,32 @@ nav .container a:hover {
   max-width: 800px;
   margin: 0 auto;
   margin-top: 40px;
+  margin-bottom: 40px;
   line-height: 20px;
+}
+
+.about .about-columns .logo {
+  height: 90px;
+  width: 90px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: #f0f0f0 solid 2px;
+  padding: 24px 0;
+}
+
+.about .about-columns .logo img {
+  line-height: 90px;
+}
+
+.about .about-columns h2 {
+  font-size: 22px;
+  color: #000000;
+  margin: 40px 0;
+}
+
+.about .about-columns p {
+  font-size: 14px;
+  color: #868585;
 }
 
 .portfolio {
@@ -193,13 +223,55 @@ nav .container a:hover {
   margin: 0 auto;
 }
 
-.portfolio .slider {
+.portfolio .portfolio-title {
+  text-align: center;
+}
+
+.portfolio .portfolio-title h1 {
+  font-size: 34px;
+  margin-top: 80px;
+}
+
+.portfolio .portfolio-title h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 60px;
+  margin: 0 auto;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+.portfolio .portfolio-tabcontrol .container {
+  max-width: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 15px;
+  height: 30px;
+}
+
+.portfolio .portfolio-tabcontrol .container .row {
+  line-height: 30px;
+}
+
+.portfolio .portfolio-tabcontrol .container a {
+  color: #000000;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.portfolio .portfolio-tabcontrol .container .active {
+  color: #ffaa2b;
+}
+
+.portfolio .portfolio-all-tab .slider {
   position: relative;
   padding-bottom: 56.5%;
   background-color: #000000;
 }
 
-.portfolio .slider .slide {
+.portfolio .portfolio-all-tab .slider .slide {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -215,12 +287,12 @@ nav .container a:hover {
   }
 }
 
-.portfolio .slider .slide img {
+.portfolio .portfolio-all-tab .slider .slide img {
   width: 100%;
   height: 100%;
 }
 
-.portfolio .slider .arrows {
+.portfolio .portfolio-all-tab .slider .arrows {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -229,8 +301,8 @@ nav .container a:hover {
   align-items: center;
 }
 
-.portfolio .slider #prew,
-.portfolio .slider #next {
+.portfolio .portfolio-all-tab .slider #prew,
+.portfolio .portfolio-all-tab .slider #next {
   margin: 0 30px;
   height: 30px;
   width: 30px;
@@ -240,15 +312,30 @@ nav .container a:hover {
   transition: all, 0.2s;
 }
 
-.portfolio .slider #prew:hover,
-.portfolio .slider #next:hover {
+.portfolio .portfolio-all-tab .slider #prew:hover,
+.portfolio .portfolio-all-tab .slider #next:hover {
   border-color: #666666;
 }
 
-.portfolio .slider #prew {
+.portfolio .portfolio-all-tab .slider #prew {
   transform: rotate(-45deg);
 }
 
-.portfolio .slider #next {
+.portfolio .portfolio-all-tab .slider #next {
   transform: rotate(135deg);
+}
+
+.portfolio .portfolio-web-tab {
+  height: 100px;
+  background-color: #ff0000;
+}
+
+.portfolio .portfolio-apps-tab {
+  height: 100px;
+  background-color: #00ff00;
+}
+
+.portfolio .portfolio-other-tab {
+  height: 100px;
+  background-color: #0000ff;
 }
