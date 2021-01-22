@@ -1,7 +1,7 @@
 @import "_nullstyle";
 
 header {
-    background: url("/img/header/header-bg.png");
+    background: url("../img/header/header-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -70,7 +70,7 @@ nav {
         max-width: 500px;
         text-align: center;
         font-size: 15px;
-        height: 30px;
+        padding: 10px 0;
         .row {
             line-height: 30px;
         }
@@ -164,7 +164,7 @@ nav {
             margin-bottom: 50px;
             text-align: center;
             font-size: 15px;
-            height: 30px;
+            padding: 10px 0;
             .row {
                 line-height: 30px;
             }
@@ -222,6 +222,7 @@ nav {
                 border-top: 5px solid #ffffff;
                 border-radius: 2px;
                 transition: all, 0.2s;
+                cursor: pointer;
                 &:hover {
                     border-color: #666666;
                 }
@@ -236,17 +237,42 @@ nav {
     }
 
     .portfolio-web-tab {
-        height: 100px;
+        height: 500px;
         background-color: #ff0000;
     }
 
     .portfolio-apps-tab {
-        height: 100px;
+        height: 500px;
         background-color: #00ff00;
     }
 
     .portfolio-other-tab {
-        height: 100px;
+        height: 500px;
         background-color: #0000ff;
+    }
+
+    .portfolio-button {
+        width: 100%;
+        height: 150px;
+        padding-top: 50px;
+        .button {
+            color #000000;
+            margin: 0 auto;
+            display: block;
+            width: 180px;
+            height: 50px;
+            text-align: center;
+            border: 2px solid #000000;
+            border-radius: 2%;
+            transition: all 0.3s;
+
+            p {
+                line-height: 45px;
+                user-select: none;
+            }
+            &:hover {
+                background-color: #00000022;
+            }
+        }
     }
 }
