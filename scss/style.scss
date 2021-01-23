@@ -43,6 +43,7 @@ header {
         width: 100%;
         height: 150px;
         padding-top: 50px;
+        cursor: pointer;
         .button {
             color: #ffffff;
             margin: 0 auto;
@@ -179,18 +180,18 @@ nav {
         }
     }
 
-    .portfolio-all-tab{
+    .portfolio-all-tab {
         .slider {
             position: relative;
             padding-bottom: 56.5%;
             background-color: #000000;
-    
+
             .slide {
                 position: absolute;
                 width: 100%;
                 height: 100%;
                 animation: fade 1s;
-    
+
                 @keyframes fade {
                     from {
                         opacity: 0.5;
@@ -199,7 +200,7 @@ nav {
                         opacity: 1;
                     }
                 }
-    
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -255,6 +256,7 @@ nav {
         width: 100%;
         height: 150px;
         padding-top: 50px;
+        cursor: pointer;
         .button {
             color: #000000;
             margin: 0 auto;
@@ -265,6 +267,7 @@ nav {
             border: 2px solid #000000;
             border-radius: 2%;
             transition: all 0.3s;
+            cursor: pointer;
 
             p {
                 line-height: 45px;
@@ -297,6 +300,70 @@ nav {
 
         img {
             margin: 20px 0;
+        }
+    }
+}
+
+footer {
+    background-color: #3c3c3c;
+    padding: 50px 0;
+
+    .footer-logo {
+        text-align: center;
+        height: 75px;
+    }
+    .footer-links {
+        max-width: 285px;
+        margin: 0 auto;
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        a {
+            color: #a4a4a4;
+        }
+    }
+    .footer-copyright {
+        text-align: center;
+        color: #6c6c6c;
+        font-size: 14px;
+    }
+}
+
+.contact {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 14px;
+
+    .contact-title {
+        text-align: center;
+        margin: 80px 0;
+
+        h1 {
+            font-size: 34px;
+            &::after {
+                content: "";
+                display: block;
+                height: 2px;
+                width: 60px;
+                margin: 0 auto;
+                background-color: #000000;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .form-container {
+        input {
+            background-color: #f8f7f7;
+            border-top: 1px solid #000;
+            width: 90%;
+            height: 35px;
+        }
+        textarea {
+            background-color: #f8f7f7;
+            border-top: 1px solid #000;
+            height: 120px;
+            width: 100%;
         }
     }
 }
