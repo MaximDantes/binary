@@ -214,7 +214,7 @@ nav {
                 justify-content: space-between;
                 align-items: center;
             }
-            #prew,
+            #prev,
             #next {
                 margin: 0 30px;
                 height: 30px;
@@ -228,11 +228,15 @@ nav {
                     border-color: #666666;
                 }
             }
-            #prew {
+            #prev {
                 transform: rotate(-45deg);
             }
             #next {
                 transform: rotate(135deg);
+            }
+            @keyframes rotate {
+                from {transform: rotate(135deg);}
+                to {transform: rotate(-45deg);}
             }
         }
     }

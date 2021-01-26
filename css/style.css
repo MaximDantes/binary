@@ -302,7 +302,7 @@ nav .container a:hover {
   align-items: center;
 }
 
-.portfolio .portfolio-all-tab .slider #prew,
+.portfolio .portfolio-all-tab .slider #prev,
 .portfolio .portfolio-all-tab .slider #next {
   margin: 0 30px;
   height: 30px;
@@ -314,17 +314,26 @@ nav .container a:hover {
   cursor: pointer;
 }
 
-.portfolio .portfolio-all-tab .slider #prew:hover,
+.portfolio .portfolio-all-tab .slider #prev:hover,
 .portfolio .portfolio-all-tab .slider #next:hover {
   border-color: #666666;
 }
 
-.portfolio .portfolio-all-tab .slider #prew {
+.portfolio .portfolio-all-tab .slider #prev {
   transform: rotate(-45deg);
 }
 
 .portfolio .portfolio-all-tab .slider #next {
   transform: rotate(135deg);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(135deg);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
 }
 
 .portfolio .portfolio-web-tab {
