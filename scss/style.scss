@@ -1,5 +1,10 @@
 @import "_nullstyle";
 
+html {
+    width: 100%;
+    margin: 0;
+}
+
 header {
     background: url("../img/header/header-bg.png");
     background-size: cover;
@@ -67,21 +72,18 @@ header {
 }
 
 nav {
-    .container {
-        max-width: 500px;
-        text-align: center;
-        font-size: 15px;
-        padding: 10px 0;
-        .row {
-            line-height: 30px;
-        }
-        a {
-            color: #000000;
-            transition: all 0.3s;
-            user-select: none;
-            &:hover {
-                color: #ffaa2b;
-            }
+    max-width: 500px;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 0;
+    line-height: 30px;
+    margin: 0 auto;
+    a {
+        color: #000000;
+        transition: all 0.3s;
+        user-select: none;
+        &:hover {
+            color: #ffaa2b;
         }
     }
 }
@@ -235,8 +237,12 @@ nav {
                 transform: rotate(135deg);
             }
             @keyframes rotate {
-                from {transform: rotate(135deg);}
-                to {transform: rotate(-45deg);}
+                from {
+                    transform: rotate(135deg);
+                }
+                to {
+                    transform: rotate(-45deg);
+                }
             }
         }
     }
@@ -357,6 +363,7 @@ footer {
     }
 
     .form-container {
+        font-weight: 900;
         input {
             background-color: #f8f7f7;
             border-top: 1px solid #000;
@@ -368,6 +375,38 @@ footer {
             border-top: 1px solid #000;
             height: 120px;
             width: 100%;
+        }
+    }
+
+    .contact-info {
+        max-width: 280px;
+        padding: 0 15px;
+        .contact-text {
+        }
+        .contact-name {
+        }
+        .contact-logos {
+            display: flex;
+            .logo-wrapper {
+                width: 30px;
+                height: 30px;
+                margin: 12px 12px 12px 0;
+                border-radius: 50%;
+                border: 2px solid #000000;
+                padding: 4px 6px;
+
+                .contact-facebook-logo {
+                    height: 18px;
+                    width: 12px;
+                }
+                .contact-linkedin-logo {
+                    height: 14px;
+                    width: 14px;
+                }
+            }
+        }
+
+        .contact-email {
         }
     }
 }

@@ -5,7 +5,7 @@ let nextArrow = document.getElementById("next");
 let prevArrow = document.getElementById("prev");
 
 nextArrow.addEventListener("click", () => { changeSlide(1); });
-prevArrow.addEventListener("click", () => { changeSlide(1); });
+prevArrow.addEventListener("click", () => { changeSlide(-1); });
 
 function changeSlide(n) {
     let slides = document.getElementsByClassName("slide");

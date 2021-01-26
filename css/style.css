@@ -75,6 +75,11 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+html {
+  width: 100%;
+  margin: 0;
+}
+
 header {
   background: url("../img/header/header-bg.png");
   background-size: cover;
@@ -144,24 +149,22 @@ header .header-button .button:hover {
   background-color: #ffffff22;
 }
 
-nav .container {
+nav {
   max-width: 500px;
   text-align: center;
   font-size: 15px;
   padding: 10px 0;
-}
-
-nav .container .row {
   line-height: 30px;
+  margin: 0 auto;
 }
 
-nav .container a {
+nav a {
   color: #000000;
   transition: all 0.3s;
   user-select: none;
 }
 
-nav .container a:hover {
+nav a:hover {
   color: #ffaa2b;
 }
 
@@ -457,6 +460,10 @@ footer .footer-copyright {
   margin-top: 20px;
 }
 
+.contact .form-container {
+  font-weight: 900;
+}
+
 .contact .form-container input {
   background-color: #f8f7f7;
   border-top: 1px solid #000;
@@ -469,4 +476,32 @@ footer .footer-copyright {
   border-top: 1px solid #000;
   height: 120px;
   width: 100%;
+}
+
+.contact .contact-info {
+  max-width: 280px;
+  padding: 0 15px;
+}
+
+.contact .contact-info .contact-logos {
+  display: flex;
+}
+
+.contact .contact-info .contact-logos .logo-wrapper {
+  width: 30px;
+  height: 30px;
+  margin: 12px 12px 12px 0;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  padding: 4px 6px;
+}
+
+.contact .contact-info .contact-logos .logo-wrapper .contact-facebook-logo {
+  height: 18px;
+  width: 12px;
+}
+
+.contact .contact-info .contact-logos .logo-wrapper .contact-linkedin-logo {
+  height: 14px;
+  width: 14px;
 }
