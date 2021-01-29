@@ -105,10 +105,10 @@
 
             <div class="portfolio-all-tab tab">
                 <div class="slider">
-                    <div class="slide hidden"><img src="img/portfolio/concorde.png" alt="concorde"></div>
-                    <div class="slide hidden"><img src="img/portfolio/saber.gif" alt="eva"></div>
-                    <div class="slide hidden"><img src="img/portfolio/HBE.png" alt="britania"></div>
-                    <div class="slide"><img src="img/portfolio/72657174.jpg" alt="gil"></div>
+                    <div class="slide hidden"><img src="img/portfolio/concorde.png" alt="concorde" loading="lazy"></div>
+                    <div class="slide hidden"><img src="img/portfolio/saber.gif" alt="eva" loading="lazy"></div>
+                    <div class="slide hidden"><img src="img/portfolio/HBE.png" alt="britania" loading="lazy"></div>
+                    <div class="slide"><img src="img/portfolio/72657174.jpg" alt="gil" loading="lazy"></div>
 
                     <div class="arrows">
                         <div id="prev"></div>
@@ -151,16 +151,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 contact-form">
-                        <div class="container form-container">
+                        <form class="container" method="GET">
                             <div class="row">
                                 <div class="col-md-6">
                                     <h5>YOUR NAME</h5>
-                                    <input type="text">
+                                    <input type="text" class="name-input" required>
                                 </div>
 
                                 <div class="col-md-6">
                                     <h5>YOUR E-MAIL</h5>
-                                    <input type="text">
+                                    <input type="email" class="email-input" required>
                                 </div>
 
                                 <div class="col-md-12">
@@ -168,10 +168,10 @@
                                     <textarea type="text"></textarea>
                                 </div>
                                 <div class="form-button col-md-12">
-                                    <div class="button">SEND</div>
+                                    <input type="submit" class="form-button" value="SEND">
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
 
                     <div class="col-md-6 col-sm-12 contact-info">
@@ -182,10 +182,12 @@
                         <p class="contact-name">Emyia Kiritsugu</p>
                         <div class="contact-logos">
                             <a href="#">
-                                <div class="logo-wrapper"><img class="contact-facebook-logo" src="img/contact/02.png" alt="f"></div>
+                                <div class="logo-wrapper"><img class="contact-facebook-logo" src="img/contact/02.png"
+                                        alt="f"></div>
                             </a>
                             <a href="#">
-                                <div class="logo-wrapper"><img class="contact-linkedin-logo" src="img/contact/01.png" alt="in"></div>
+                                <div class="logo-wrapper"><img class="contact-linkedin-logo" src="img/contact/01.png"
+                                        alt="in"></div>
                             </a>
                         </div>
                         <p class="contact-email">e-mail: emyia.kiritsugu@gmail.com</p>
@@ -211,17 +213,8 @@
         <div class="footer-copyright">
             Unlimited Blade Works
         </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-        crossorigin="anonymous"></script>
+    </footer> 
+    
     <script src="js/script.js"></script>
 </body>
 

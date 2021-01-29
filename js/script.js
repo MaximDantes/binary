@@ -22,6 +22,8 @@ function changeSlide(n) {
     slides[currentSlideIndex].classList.remove("hidden");
 }
 
+
+
 //!tab control
 
 let tabControllers = document.getElementsByClassName("tab-controller");
@@ -36,7 +38,7 @@ function changeTab(n){
     let tabControllers = document.getElementsByClassName("tab-controller");
     let tabs = document.getElementsByClassName("tab");
 
-    for (i = 0; i < tabs.length; i++) {
+    for (let i = 0; i < tabs.length; i++) {
         tabs[i].classList.add("hidden");
         tabControllers[i].classList.remove("active");
     }
@@ -44,3 +46,13 @@ function changeTab(n){
     tabs[n].classList.remove("hidden");
     tabControllers[n].classList.add("active");
 }
+
+
+//! hover remove
+
+if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+    console.log('this is a touch device');
+  } else {
+    console.log('this is not a touch device');
+    document.body.classList.add('no-touch');
+  }

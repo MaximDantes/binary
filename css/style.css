@@ -181,6 +181,12 @@ nav a:hover {
   margin-top: 20px;
 }
 
+@media screen and (max-device-width: 767px) {
+  .about h1 {
+    margin-top: 40px;
+  }
+}
+
 .about p {
   font-size: 14px;
   max-width: 800px;
@@ -188,6 +194,7 @@ nav a:hover {
   margin-top: 40px;
   margin-bottom: 40px;
   line-height: 20px;
+  padding: 0 10px;
 }
 
 .about .about-columns .logo {
@@ -214,6 +221,12 @@ nav a:hover {
   color: #868585;
 }
 
+@media screen and (max-device-width: 767px) {
+  .about .about-columns h2 {
+    margin: 10px 0;
+  }
+}
+
 .portfolio {
   max-width: 1100px;
   margin: 0 auto;
@@ -236,6 +249,12 @@ nav a:hover {
   margin: 0 auto;
   background-color: #000000;
   margin-top: 20px;
+}
+
+@media screen and (max-device-width: 767px) {
+  .portfolio .portfolio-title h1 {
+    margin-top: 20px;
+  }
 }
 
 .portfolio .portfolio-tabcontrol .container {
@@ -261,10 +280,16 @@ nav a:hover {
   color: #ffaa2b;
 }
 
+@media screen and (max-device-width: 767px) {
+  .portfolio .portfolio-tabcontrol .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 .portfolio .portfolio-all-tab .slider {
   position: relative;
   padding-bottom: 56.5%;
-  background-color: #000000;
 }
 
 .portfolio .portfolio-all-tab .slider .slide {
@@ -305,7 +330,7 @@ nav a:hover {
   border-left: 5px solid #ffffff;
   border-top: 5px solid #ffffff;
   border-radius: 2px;
-  transition: all, 0.2s;
+  transition: all, 0.3s;
   cursor: pointer;
 }
 
@@ -373,6 +398,13 @@ nav a:hover {
 
 .portfolio .portfolio-button .button:hover {
   background-color: #00000022;
+}
+
+@media screen and (max-device-width: 767px) {
+  .portfolio .portfolio-button {
+    padding-top: 25px;
+    height: 100px;
+  }
 }
 
 .partners {
@@ -452,7 +484,14 @@ footer .footer-copyright {
   margin-top: 20px;
 }
 
-.contact .form-container input {
+@media screen and (max-device-width: 767px) {
+  .contact .contact-title {
+    margin: 15px 0 50px 0;
+  }
+}
+
+.contact form .name-input,
+.contact form .email-input {
   background-color: #f8f7f7;
   border-top: 1px solid #000;
   width: 100%;
@@ -460,7 +499,7 @@ footer .footer-copyright {
   margin-bottom: 20px;
 }
 
-.contact .form-container textarea {
+.contact form textarea {
   background-color: #f8f7f7;
   border-top: 1px solid #000;
   height: 120px;
@@ -468,20 +507,21 @@ footer .footer-copyright {
   resize: none;
 }
 
-.contact .form-container .form-button {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.contact form .form-button {
+  background: rgba(0, 0, 0, 0);
   display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
   justify-content: flex-end;
   font-weight: 500;
   transition: all 0.3s;
 }
 
-.contact .form-container .form-button .button {
+.contact form .form-button input {
   cursor: pointer;
 }
 
-.contact .form-container .form-button .button:hover {
+.contact form .form-button input:hover {
   color: #555555;
 }
 
@@ -512,4 +552,20 @@ footer .footer-copyright {
 .contact .contact-info .contact-logos .logo-wrapper .contact-linkedin-logo {
   height: 14px;
   width: 14px;
+}
+
+@media screen and (max-device-width: 767px) {
+  .contact .contact-info {
+    max-width: 100%;
+    text-align: center;
+  }
+  .contact .contact-info .contact-logos {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+}
+
+.no-touch {
+  background-color: #00f;
 }
