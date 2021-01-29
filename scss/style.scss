@@ -133,7 +133,7 @@ nav {
 
         @media screen and (max-device-width: 767px) {
             h2 {
-                margin: 10px 0;
+                margin: 20px 0;
             }
         }
     }
@@ -376,7 +376,7 @@ footer {
             }
         }
         @media screen and (max-device-width: 767px) {
-            margin: 15px 0 50px 0;
+            margin: 30px 0 50px 0;
         }
     }
 
@@ -447,8 +447,4 @@ footer {
             }
         }
     }
-}
-
-.no-touch{
-    background-color: #00f;
 }
